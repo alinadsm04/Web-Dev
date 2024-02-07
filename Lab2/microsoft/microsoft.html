@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft</title>
+
+    <style>
+        body{
+            min-width: 100vh;
+            min-height: 100vh;
+        }
+        .contentCenterVertical{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .contentCenterHorizontal{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .container-sm{
+            width: 55%;
+        }
+        .container{
+            width: 90%;
+        }
+        .container-fluid{
+            width: 100%;
+        }
+        .greeting-bg{
+            width: 100%;
+        }
+        .greeting-content{
+            position: relative;
+        }
+        .greeting-section{
+            position: absolute;
+            width: 35%;
+            top: 25%;
+            left: 15%;
+            color: white;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            width: 100%;
+        }
+        .col{
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+        .col-b{
+            flex-basis: 0;
+            flex-grow: 1.5;
+            max-width: 100%;
+        }
+        .nav-item-icon{
+            width: 15px;
+            height: 15px;
+            margin-left: 5px;
+        }
+        .logo{
+            width: 150px;
+            height: 30px;
+            margin-right: 16px;
+        }
+        .mr-10{
+            margin-right: 10px;
+        }
+        .text-icon-button{
+            text-align: center;
+        }
+        button{
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border: none;
+            margin-right: 10px;
+        }
+        .greeting-button{
+            padding: 8px 12px 8px 16px;
+        }
+        .button-active{
+            color: white;
+            background-color: black;
+        }
+        .white-svg{
+            filter: invert(90%) sepia(0%) saturate(7459%) hue-rotate(109deg) brightness(113%) contrast(111%);
+        }
+        .button-inactive{
+            color: black;
+            background-color: transparent;
+        }
+        ul.horizontal-list{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        ul.horizontal-list li{
+            color: gray;
+            float: left;
+            padding: 16px 10px 16px 10px;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        .card-image{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .card-text{
+            display: inline-block;
+        }
+        .link{
+            cursor: pointer;
+            color: blue;
+            padding: 0%;
+            filter: invert(9%) sepia(100%) saturate(7449%) hue-rotate(248deg) brightness(90%) contrast(144%);
+        }
+        .p-0{
+            padding: 0;
+        }
+        .m-0{
+            margin: 0;
+        }
+    </style>
+</head>
+<body class = "contentCenterVertical">
+    <nav class="container navbar">
+        <img src="static/img/logo.png" class = "logo mr-10"/>
+        <ul class="horizontal-list col-b">
+            <li>Microsoft 365</li>
+            <li>Office</li>
+            <li>Windows</li>
+            <li>Поддержка</li>
+        </ul>
+        <ul class="horizontal-list col">
+            <li><div class = "contentCenterHorizontal">Все продукты Microsoft <img src="static/img/dropdown.svg" class="nav-item-icon"></div></li>
+            <li><div class = "contentCenterHorizontal">Поиск <img src="static/img/search.png" class="nav-item-icon"></div></li>
+            <li><div class = "contentCenterHorizontal">Корзина <img src="static/img/shop.png" class="nav-item-icon"></div></li>
+            <li><div class = "contentCenterHorizontal">Войти <img src="static/img/profile.png" class="nav-item-icon"></div></li>
+        </ul>
+    </nav>
+    <div class="container-fluid contentCenterVertical">
+        <div class = "greeting-content">
+            <img src="static/img/bg.jpeg" class = "greeting-bg"/>
+            <div class = "greeting-section container-sm">
+                <h1>Microsoft 365</h1>
+                <p>Приложения Office премиум, дополнительное облачное хранилище, продвинутые инструменты обеспечения безопасности - все в одной удобной подписке
+                    
+                </p>
+                <div class="row">
+                    <button class="contentCenterHorizontal button-active greeting-button">
+                        <span class="text-icon-button">
+                            <strong>До 6 человек</strong>
+                        </span>
+                        <img src="static/img/arrow right.svg" class="white-svg">
+                    </button>
+                    <button class="contentCenterHorizontal button-inactive greeting-button">
+                        <span class="text-icon-button" style="color: white">
+                            <strong>Для 1 человека </strong>
+                        </span>
+                        <img src="static/img/arrow right.svg" class="white-svg">
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="horizontal-list row">
+            <li class = "col">
+                <div class = "card ">
+                    <img src="static/img/card-placeholder.avif" class = "card-image"/>
+                    <h3 class = "p-0 m-0">Microsoft Teams</h3>
+                    <p class = "card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt velit repellat distinctio iste adipisci nobis impedit? Libero odio neque animi in. Quia veniam atque placeat non aspernatur alias nihil officia.</p>
+                    <button class="contentCenterHorizontal button-inactive link">
+                        <span class="text-icon-button">
+                            Подробнее 
+                        </span>
+                        <img src="static/img/arrow right.svg" >
+                    </button>
+                </div>
+            </li>
+            <li class = "col">
+                <div class = "card ">
+                    <img src="static/img/card-placeholder.avif" class = "card-image"/>
+                    <h3 class = "p-0 m-0">Microsoft Edge</h3>
+                    <p class = "card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt velit repellat distinctio iste adipisci nobis impedit? Libero odio neque animi in. Quia veniam atque placeat non aspernatur alias nihil officia.</p>
+                    <button class="contentCenterHorizontal button-inactive link">
+                        <span class="text-icon-button">
+                            Скачать
+                        </span>
+                        <img src="static/img/arrow right.svg" >
+                    </button>
+                </div>
+            </li>
+            <li class = "col">
+                <div class = "card ">
+                    <img src="static/img/card-placeholder.avif" class = "card-image"/>
+                    <h3 class = "p-0 m-0">Microsoft OneDrive</h3>
+                    <p class = "card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt velit repellat distinctio iste adipisci nobis impedit? Libero odio neque animi in. Quia veniam atque placeat non aspernatur alias nihil officia.</p>
+                    <button class="contentCenterHorizontal button-inactive link">
+                        <span class="text-icon-button">
+                            Подробнее 
+                        </span>
+                        <img src="static/img/arrow right.svg" >
+                    </button>
+                </div>
+            </li>
+            <li class = "col">
+                <div class = "card ">
+                    <img src="static/img/card-placeholder.avif" class = "card-image"/>
+                    <h3 class = "p-0 m-0">Обновление Windows 10</h3>
+                    <p class = "card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt velit repellat distinctio iste adipisci nobis impedit? Libero odio neque animi in. Quia veniam atque placeat non aspernatur alias nihil officia.</p>
+                    <button class="contentCenterHorizontal button-inactive link">
+                        <span class="text-icon-button">
+                            Узнать больше
+                        </span>
+                        <img src="static/img/arrow right.svg" >
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

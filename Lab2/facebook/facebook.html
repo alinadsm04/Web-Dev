@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Facebook | Log in</title>
+        <style>
+            .contentCenterVertical{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .contentCenterHorizontal{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            body {
+                background-color: rgb(241, 242, 246);
+                overflow-x: hidden;
+
+            }
+            
+            #fb{
+                color: rgb(25, 119, 232);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 70px;
+                font-weight: bold;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+            #greeting{
+                width: 60%;
+                font-size: 26px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 10px;
+            }
+            .container{
+                width: 60%;
+                height: 80vh;
+            }
+            .row{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+            }
+
+            #form{
+                flex-basis: 0;
+                flex-grow: 1;
+                max-width: 100%;
+                padding: 0px;
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            
+            #start{
+                flex-basis: 0;
+                flex-grow: 2;
+            }
+            .mb-20{
+                margin-bottom: 15px;
+            }
+            #login-form{
+                border-radius: 10px;
+                background-color: white;
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                padding: 10px;
+                display: flex;
+                width: 85%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #login-form input {
+                width: 90%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 6px;
+            }
+
+            #login-form button {
+                width: 96%;
+                padding: 10px;
+                border: none;
+                border-radius: 6px;
+                background-color: #1877f2;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            #login-form button.create-account {
+                background-color: #42b72a;
+                width: 50%;
+            }
+
+            .forgot-password {
+                color: #1877f2;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .line{
+                background-color: rgb(207, 207, 207);
+                width: 90%;
+                height: 1px;
+            }
+            footer{
+                background-color: white;
+                color: rgb(157, 157, 157);
+                font-size: 13px;
+                padding-left: 400px;
+                font-family: Helvetica;
+                width: 100%; 
+                line-height: 8px;
+            }
+            footer .line{
+                width: 70%;
+
+            }
+            
+            
+
+        </style>
+
+    </head>
+    
+    <body class = "contentCenterVertical">
+        <div class = "contentCenterHorizontal row container">
+            <div id="start">
+                <p id="fb">facebook</p>
+                <p id="greeting">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+            </div>
+
+            <div id="form">
+                <form id="login-form">
+                    <input type="text" id="email" name="email" placeholder="Электронный адрес или номер телефона" class="mb-20" required>
+                    <input type="password" id="password" name="password" placeholder="Пароль" class = "mb-20" required>
+                    <button type="submit" class = "mb-20">Вход</button>
+                    <a href="" style="text-decoration: none;"class="forgot-password mb-20" >Забыли пароль?</a>
+                    <div class = "line mb-20"></div>
+                    <button type="button" class="create-account mb-20">Создать аккаунт</button>
+                </form>
+                <p style="text-align: center; font-size: 14px;">
+                    <strong>Создать Страницу</strong> знаменитости, музыкальной группы <br> или компании.
+                </p>
+            </div>
+        </div>
+
+        
+
+        <footer>
+            <p>Русский &nbsp English(US) &nbsp Türkçe &nbsp Bahasa Indonesia &nbsp Қазақша &nbsp 中文(简体) &nbsp Deutsch &nbsp 한국어 &nbsp Shqip &nbsp Español &nbsp Português (Brazil)</p>
+            <div class="line"></div>
+            <p>Регистрация &nbsp&nbsp Вход &nbsp&nbsp Messenger &nbsp&nbsp Facebook Lite &nbsp&nbsp Watch &nbsp&nbsp Люди &nbsp&nbsp Страницы &nbsp&nbsp Категории Страниц &nbsp&nbsp Места &nbsp&nbsp Игры &nbsp&nbsp Места &nbsp&nbsp Marketplace</p>
+            <p>Facebook Pay &nbsp&nbsp Группы &nbsp&nbsp Вакансии &nbsp&nbsp Oculus &nbsp&nbsp Portal &nbsp&nbsp Instagram &nbsp&nbsp Местные &nbsp&nbsp Благотворительные акции &nbsp&nbsp Услуги &nbsp&nbsp Центр информации о голосовании</p>
+            <p>О нас &nbsp&nbsp Создать рекламу &nbsp&nbsp Создать страницу &nbsp&nbsp Разработчикам &nbsp&nbsp Вакансии &nbsp&nbsp Конфиденциальность &nbsp&nbsp Файлы cookie &nbsp&nbsp Выбор рекламы</p>
+            <p>Условия использования Справка</p> 
+            <br>
+
+            <p>Facebook © 2021</p>
+        </footer>
+
+
+    </body>
+</html>

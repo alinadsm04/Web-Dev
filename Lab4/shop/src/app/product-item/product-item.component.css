@@ -1,9 +1,3 @@
-.product-catalog {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
 .product-card {
   width: 300px;
   border: 1px solid #ddd;
@@ -50,13 +44,18 @@
 
 .share-btn {
   background-color: #4caf50;
-  margin: 10px;
+}
+.delete-btn {
+  background-color: red;
+}
+.like-btn {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+.dislike-btn {
+  background-color: blue;
+  border: none;
+  color: white
 }
 
-
-@media (max-width: 600px) {
-  .product-catalog {
-    flex-direction: column;
-    align-items: center;
-  }
-}

@@ -1,0 +1,14 @@
+<div class="card" *ngFor = "let company of companies" >
+    <div class="info" [routerLink]="['/companies', company.id, 'vacancies']">
+        <div class="company-name">{{company.name}}</div>
+        <div class="address">{{company.city}}, {{company.address}}</div>
+    </div>
+    <div class="icons">
+        <button class=" edit-button" [routerLink]="['/companies/form', company.id]">Edit</button>
+        <button class="delete-button" (click)="deleteCompany(company.id)">Delete</button>
+        <div class="arrow">></div>
+    </div>
+</div>
+<div class="create-button-container">
+    <button class="create-button" [routerLink]="['/companies/form']">Create Company</button>
+</div>
